@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="port.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Document</title>
+	
+  </head>
+  <style>
+    .head {
+      background: #ffffff;
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin: auto;
+    }
+    body {
+      background: #ff4757;
+    }
+    .title {
+      position: absolute;
+      top: 20%;
+      left: 37%;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 60px;
+      letter-spacing: -1px;
+      font-weight: bolder;
+    }
+    .subtitle {
+      position: absolute;
+      top: 35%;
+      left: 38%;
+      color: #ffff;
+      font-size: 30px;
+      font-weight: 200;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      letter-spacing: 1px;
+    }
+    .button {
+      position: absolute;
+      top: 45%;
+      left: 44%;
+      border: 16px solid #ffffff;
+      border-radius: 39px;
+      background: #ffffff;
+      height: 40px;
+      width: 160px;
+      cursor: pointer;
+      
+
+
+    }
+    p {
+      position: fixed;
+      top: 44%;
+      left: 47%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 23px;
+      letter-spacing: 1px;
+      
+    }
+
+    .button:hover::after {
+      transition: 0.5s;
+      display: block;
+      position: fixed;
+      top: 44%;
+      left: 45%;
+      content: "";
+      background: #ffffff;
+      height: 3px;
+      width: 145px;
+      filter: blur(6px);
+      border-radius: 50%;
+    }
+    .button:hover::before {
+      text-decoration: none;
+      transition: 0.5s;
+      display: block;
+      position: fixed;
+      top: 55%;
+      left: 45%;
+      content: "";
+      background: #ffffff;
+      height: 3px;
+      width: 145px;
+      filter: blur(6px);
+      border-radius: 50%;
+    }
+    .arrow {
+      position: fixed;
+      top: 44%;
+      left: 54%;
+      color: #ffffff;
+    }
+
+    .arrow:hover {
+      transition: 0.2s;
+      color: #000;
+    }
+    .rect1 {
+      position: absolute;
+      top: 60%;
+      left: 23.8%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  cursor: pointer;
+    }
+    .rect1:hover {
+      transition: 0.5s;
+      border: 1px solid #ffffff;
+      height: 200px;
+    }
+    .rect2 {
+      position: absolute;
+      top: 60%;
+      left: 44.8%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  pointer: cursor;
+	  cursor: pointer;
+    }
+    .rect2:hover {
+      transition: 0.5s;
+      border: 1px solid #ffffff;
+      height: 200px;
+    }
+    .rect3 {
+      position: absolute;
+      top: 60%;
+      left: 64.8%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  pointer: cursor;
+	  cursor: pointer;
+    }
+    .rect3:hover {
+      transition: 0.5s;
+      border: 1px solid #ffffff;
+      height: 200px;
+    }
+    .fa {
+      position: relative;
+      top: 30px;
+      left: 60px;
+      color: #ffffff;
+      font-size: 40px;
+    }
+    #two {
+      position: relative;
+      top: 30px;
+      left: 60px;
+      color: #ffffff;
+      font-size: 40px;
+    }
+    #three {
+      position: relative;
+      top: 30px;
+      left: 58px;
+      color: #ffffff;
+      font-size: 40px;
+    }
+    .text1 {
+      position: absolute;
+      top: 45%;
+      left: 7%;
+      color: #ffff;
+	 
+    }
+	.text1:hover{
+	transition : .5s;
+	color:#747d8c;
+	}
+    .text2 {
+      position: absolute;
+      top: 45%;
+      left: 29%;
+      color: #ffff;
+	  
+	  
+    }
+	.text2:hover{
+	transition : .5s;
+	color:#747d8c;
+	}
+    .text3 {
+      position: absolute;
+      top: 45%;
+      left: 20%;
+      color: #ffff;
+	 
+    }
+	.text3:hover{
+	transition : .5s;
+	color:#747d8c;
+	}
+	@media screen and (max-width: 648px){
+	 .title {
+      position: absolute;
+      top: 35%;
+      left: 24%;
+	  
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 60px;
+      letter-spacing: -1px;
+      font-weight: bolder;
+    }
+	    .subtitle {
+      position: absolute;
+      top: 65%;
+      left: 9%;
+      color: #ffff;
+      font-size: 30px;
+      font-weight: 200;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      letter-spacing: 1px;
+    }
+	 .button {
+      position: absolute;
+      top: 85%;
+      left: 24%;
+      border: 16px solid #ffffff;
+      border-radius: 39px;
+      background: #ffffff;
+      height: 40px;
+      width: 160px;
+      cursor: pointer;
+      
+
+
+    }
+	   p {
+      position: absolute;
+      top: -50%;
+      left: 20%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 23px;
+      letter-spacing: 1px;
+      
+    }
+	
+	    .rect1 {
+      position: absolute;
+      top: 100%;
+      left: 27%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  cursor: pointer;
+    }
+	   .rect2 {
+      position: absolute;
+      top: 155%;
+      left: 27%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  pointer: cursor;
+	  cursor: pointer;
+    }
+	  .rect3 {
+      position: absolute;
+      top: 210%;
+      left: 27%;
+      border: 1px solid #ffff;
+      height: 160px;
+      width: 160px;
+      border-radius: 9px;
+	  pointer: cursor;
+	  cursor: pointer;
+	
+    }
+	#container{
+	position: fixed;
+	top: -2%;
+	left: -88%;
+	transition: .6s;
+}
+#container .box{
+	position: absolute;
+		top: 34%;
+	left: 363.7px;
+	cursor: pointer;
+}
+#template{
+	position: fixed;
+	top: -2%;
+	left: 100%;
+	transition: 0.5s;
+	
+	overflow: hidden;
+	
+}
+
+#insta{
+
+position:relative;
+top: 0%;
+
+left:30.7%;
+	}
+	    .button:hover::after {
+      transition: 0.5s;
+      display: block;
+      position: fixed;
+      top: 44%;
+      left: 30%;
+      content: "";
+      background: #ffffff;
+      height: 3px;
+      width: 145px;
+      filter: blur(6px);
+      border-radius: 50%;
+	  display: none;
+    }
+    .button:hover::before {
+      text-decoration: none;
+      transition: 0.5s;
+      display: block;
+      position: absolute;
+      top: -100%;
+      left: -60%;
+      content: "";
+      background: #ffffff;
+      height: 3px;
+      width: 385px;
+      filter: blur(6px);
+      border-radius: 50%;
+	  transition:5s;
+    }
+	#container.active{
+	left: -9%;
+}
+	}
+	
+  </style>
+  <script type="text/javascript">
+
+  function clickb(){
+   document.getElementById("container").classList.toggle("active");
+   }
+    function clickbt(){
+   document.getElementById("template").classList.toggle("active");
+   }
+  </script>
+  <body>
+    <header class="head"></header>
+    <div class="title">UI/UX Designer</div>
+    <div class="subtitle">I build products for the web</div>
+    <div class="button"><a href="#"><p>Portfolio</p><p class="arrow"></p></a></div>
+    <div class="rect1"><i class="fa fa-briefcase" aria-hidden="true"></i><p class="text1">Professional</p></div>
+    <div class="rect2"><i id="two" class="fa fa-rocket" aria-hidden="true"></i><p class="text2">Quick</p></div>
+    <div class="rect3"><i id="three" class="fa fa-envelope-open-o" aria-hidden="true"></i><p class="text3"onclick="clickbt()">Connect</p></div>
+  <div id="container">
+  <div class="box" onclick="clickb()">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>
+<ul>
+<li>About</li>
+<li>Work</li>
+<li  >Contact</li>
+</ul>
+</div>  
+<div id="template">
+
+<ul>
+
+<li>Instagram<i id="insta" class="fa fa-instagram" aria-hidden="true"style="position:relative;top: -90%;left:64.7%;"></i></li>
+
+<li>Facebook<i class="fa fa-facebook" aria-hidden="true" style="position:relative;top:-90%;left:60%;"></i> </li>
+<li>Github<i class="fa fa-github" aria-hidden="true" style="position:relative;top: 12%;left:20%;"></i></li>
+</ul>
+</div>
+
+  </body>
+  
+</html>
